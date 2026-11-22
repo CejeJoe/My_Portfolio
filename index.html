@@ -1,0 +1,154 @@
+<!-- Author: Ngonzi Collin Joe -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ngonzi Collin Joe | Web Developer</title>
+<meta name="description" content="Portfolio of Ngonzi Collin Joe, a web developer and UI/UX designer in Kampala, Uganda.">
+<link rel="icon" href="assets/imgs/favicon-32x32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+<noscript><style>.scene{position:static!important;visibility:visible!important;opacity:1!important}#boot,#graph{display:none}html,body{overflow:auto!important}</style></noscript>
+<script src="assets/js/main.js" defer></script>
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<div id="boot" role="dialog" aria-label="Loading portfolio">
+  <pre id="log" aria-hidden="true"></pre>
+  <div id="pct" aria-live="polite">0<small>%</small></div>
+  <div class="bar"><i id="fill"></i></div>
+  <button id="skip" type="button">skip intro →</button>
+  <button id="press" type="button">Press <kbd>Enter ↵</kbd> to run collin.exe</button>
+</div>
+<div id="wipe" aria-hidden="true"></div>
+
+<div id="hud"><span id="count">01/06</span><button id="cmdbtn" type="button" aria-label="Open command palette">⌘ / cmd</button></div>
+<div id="hint"><span><kbd>↵</kbd> next chapter</span><span><kbd>←</kbd><kbd>→</kbd> move</span><span><kbd>/</kbd> command</span><span class="a">the floating words are my skills — hover them</span></div>
+
+<nav id="graph" aria-label="Chapters">
+  <ul>
+    <li><button type="button" data-i="0" aria-label="Home"><b></b><span class="t"><code class="dim">a1f3c0</code> home<span class="head">← HEAD</span></span></button></li>
+    <li><button type="button" data-i="1" aria-label="About"><b></b><span class="t"><code class="dim">b72e9d</code> about<span class="head">← HEAD</span></span></button></li>
+    <li><button type="button" data-i="2" aria-label="Skills"><b></b><span class="t"><code class="dim">c04a51</code> skills<span class="head">← HEAD</span></span></button></li>
+    <li><button type="button" data-i="3" aria-label="Journey"><b></b><span class="t"><code class="dim">d9b8f2</code> journey<span class="head">← HEAD</span></span></button></li>
+    <li><button type="button" data-i="4" aria-label="Works"><b></b><span class="t"><code class="dim">e35c7a</code> works<span class="head">← HEAD</span></span></button></li>
+    <li><button type="button" data-i="5" aria-label="Contact"><b></b><span class="t"><code class="dim">f61d04</code> contact<span class="head">← HEAD</span></span></button></li>
+  </ul>
+</nav>
+
+<main>
+  <section class="scene" id="home" aria-label="Home">
+    <div class="cols">
+      <div>
+        <p class="tag rv">● full stack software engineer · UI/UX designer</p>
+        <p class="wh rv" style="margin-top:.8rem"><span class="a">$</span> whoami</p>
+        <h1 class="rv">Hi, I’m<br><em>Collin Joe.</em></h1>
+        <p class="lead rv" style="margin:1.2rem 0">I’m a student building thoughtful, useful digital experiences with code and design.</p>
+        <p class="rv">Currently exploring <span class="g caret" id="role">Web Development</span></p>
+        <p class="rv" style="margin-top:1.6rem;display:flex;gap:1.2rem;align-items:center;flex-wrap:wrap"><button class="btn" data-go="1" type="button">Run chapter 01 ↵</button><a class="dim" href="#contact" data-go="5">Get in touch ↗</a></p>
+      </div>
+      <figure class="shot rv" id="shot">
+        <img class="base" src="assets/imgs/collin-joe.jpg" alt="Ngonzi Collin Joe">
+        <span class="tint"></span>
+        <img class="col" src="assets/imgs/collin-joe.jpg" alt="">
+        <span class="scan"></span><span class="beam"></span><span class="proj"></span>
+        <figcaption>hologram · hover to reveal true colour</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="scene" id="about" aria-label="About">
+    <p class="tag rv">01 / a little about me</p>
+    <h2 class="rv">Curious by nature.<br><em>Creative by choice.</em></h2>
+    <div class="cols">
+      <div class="rv">
+        <p class="lead">I’m Ngonzi Collin Joe, a student learning software engineering. I enjoy turning ideas into clear, user-friendly experiences and learning how the details of design and code work together.</p>
+        <p class="lead" style="margin-top:1rem">I’m building my skills one project at a time, with a focus on clean layouts, responsive pages, and making the web easier to use.</p>
+      </div>
+      <div class="win rv"><header><i></i><i></i><i></i><span>about.json</span></header><div class="json">{
+  <span class="k">"name"</span>: <span class="s">"Ngonzi Collin Joe"</span>,
+  <span class="k">"based_in"</span>: <span class="s">"Kampala, Uganda"</span>,
+  <span class="k">"currently"</span>: <span class="s">"Learning and creating"</span>,
+  <span class="k">"focus"</span>: [<span class="s">"Software Engineering"</span>, <span class="s">"UI/UX"</span>],
+  <span class="k">"learning_by"</span>: <span class="s">"building"</span>
+}</div></div>
+    </div>
+  </section>
+
+  <section class="scene" id="skills" aria-label="Skills">
+    <p class="tag rv">02 / my focus</p>
+    <h2 class="rv">Learning by <em>doing.</em></h2>
+    <p class="lead rv">I’m building practical experience in software engineering and UI/UX through study, practice, and projects.</p>
+    <div class="mods">
+      <article class="mod rv"><span>01</span><h3>Software Engineering</h3><div class="chips"><b>HTML</b><b>CSS</b><b>JavaScript</b><b>PHP</b><b>C#</b></div></article>
+      <article class="mod rv"><span>02</span><h3>UI/UX design</h3><div class="chips"><b>Wireframes</b><b>Prototypes</b><b>User-centred layouts</b></div></article>
+      <article class="mod rv"><span>03</span><h3>Database foundations</h3><div class="chips"><b>SQL</b><b>Data organization</b><b>Problem-solving</b></div></article>
+    </div>
+    <p class="cm rv">// These are areas I’m studying and practicing, not self-assessed proficiency ratings.</p>
+  </section>
+
+  <section class="scene" id="journey" aria-label="Journey">
+    <p class="tag rv">03 / my learning journey</p>
+    <h2 class="rv">Building a strong <em>foundation.</em></h2>
+    <p class="lead rv">Over two years of formal ICT and software-engineering study, with more to learn.</p>
+    <div class="win rv"><header><i></i><i></i><i></i><span>~/collin $ git log --graph --oneline</span></header><div>
+      <div class="commit"><span class="gr">*<br>|<br>|<br>|</span><span><span class="hash">commit 9c2e1ab</span> <span class="g">(HEAD → current)</span> <span class="dim">· 2025 — Present</span></span><h3>Diploma in Software Engineering</h3><span>International School of Business and Technology (ISBAT)</span><span class="dim">Focus: software development and practical computing.</span></div>
+      <div class="commit"><span class="gr">*<br>&nbsp;<br>&nbsp;<br>&nbsp;</span><span><span class="hash">commit 5d70f3e</span> <span class="dim">· 2023 — 2025 · completed</span></span><h3>Certificate in Information and Communications Technology (ICT)</h3><span>Uganda Institute of Information and Communications Technology (UICT)</span><span class="dim">Built a foundation in information and communications technology.</span></div>
+    </div></div>
+  </section>
+
+  <section class="scene" id="work" aria-label="Works">
+    <p class="tag rv">04 / selected work</p>
+    <h2 class="rv">Things I’ve <em>built.</em></h2>
+    <div class="projects">
+      <article class="pcard rv" style="--c:#2f7d5b">
+        <div class="thumb"><span class="mock"><i></i><i></i><i></i><b>Élégante</b><u></u><u></u></span><img src="assets/imgs/projects/elegante.jpg" alt="Screenshot of the Élégante — Fashion &amp; Design House website" loading="lazy" onerror="this.remove()"></div>
+        <div class="pbody"><span class="pt">Website · Fashion</span><h3>Élégante — Fashion &amp; Design House</h3><p>A fashion and design house site with about, services and a contact form.</p>
+        <div class="pact"><button class="btn sm" data-prev="0" type="button">Live preview</button><a class="dim" href="https://fashiongreen.netlify.app/" target="_blank" rel="noreferrer">Open site ↗</a></div></div>
+      </article>
+      <article class="pcard rv" style="--c:#b97800">
+        <div class="thumb"><span class="mock"><i></i><i></i><i></i><b>Genva</b><u></u><u></u></span><img src="assets/imgs/projects/genva.jpg" alt="Screenshot of the Genva — Branding Agency website" loading="lazy" onerror="this.remove()"></div>
+        <div class="pbody"><span class="pt">Website · Branding</span><h3>Genva — Branding Agency</h3><p>A branding and digital-marketing agency site with a filterable portfolio of logos, flyers and branding work.</p><p class="dim sm">Team project</p>
+        <div class="pact"><button class="btn sm" data-prev="1" type="button">Live preview</button><a class="dim" href="https://genva.netlify.app/genva/" target="_blank" rel="noreferrer">Open site ↗</a></div></div>
+      </article>
+      <article class="pcard rv" style="--c:#027d13">
+        <div class="thumb"><span class="mock"><i></i><i></i><i></i><b>Chrisbert</b><u></u><u></u></span><img src="assets/imgs/projects/chrisbert.jpg" alt="Screenshot of the Chrisbert Consult website" loading="lazy" onerror="this.remove()"></div>
+        <div class="pbody"><span class="pt">Website · Consultancy</span><h3>Chrisbert Consult</h3><p>A consultancy site covering assignments, team, gallery, careers and contact for a Kampala research and capacity-building firm.</p><p class="dim sm">Built with Roce Innovation Hub · PHP</p>
+        <div class="pact"><button class="btn sm" data-prev="2" type="button">Live preview</button><a class="dim" href="https://chrisbertconsult.org/" target="_blank" rel="noreferrer">Open site ↗</a></div></div>
+      </article>
+    </div>
+    <p class="cm rv">// Press <kbd>/</kbd> and try “open genva” to preview a project without leaving this page.</p>
+  </section>
+
+  <section class="scene" id="contact" aria-label="Contact">
+    <p class="tag rv">05 / get in touch</p>
+    <h2 class="rv">Let’s make something <em>useful.</em></h2>
+    <div class="cols" style="align-items:start">
+      <div class="rv">
+        <p class="lead">Have a question, a project idea, or just want to connect? Send me a message and I’ll get back to you.</p>
+        <div class="links" style="margin:1.2rem 0"><a href="mailto:cj616543@gmail.com">cj616543@gmail.com</a><a href="tel:+256704841308">+256 704 841 308</a></div>
+        <p style="margin-bottom:1rem"><button class="btn sm" id="copy" type="button">Copy email</button></p>
+        <p class="dim" style="margin-bottom:1rem">6th Street, Block 3<br>Kampala, Uganda</p>
+        <div class="soc"><a href="https://twitter.com/CollinJoe7" target="_blank" rel="noreferrer">X / Twitter ↗</a><a href="https://www.instagram.com/its_collin_joe/" target="_blank" rel="noreferrer">Instagram ↗</a><a href="https://www.facebook.com/Ngonzi.Collin/" target="_blank" rel="noreferrer">Facebook ↗</a></div>
+      </div>
+      <form class="win rv" id="form"><header><i></i><i></i><i></i><span>send_message.sh</span></header><div>
+        <label for="n">Your name</label><input id="n" name="name" autocomplete="name" required>
+        <label for="e">Email address</label><input id="e" name="email" type="email" autocomplete="email" required>
+        <label for="m">Your message</label><textarea id="m" name="message" rows="3" required></textarea>
+        <input type="text" name="_honey" id="hp" tabindex="-1" autocomplete="off" style="display:none">
+        <button class="btn" id="send" type="submit">Send message ↗</button>
+        <p class="cm" id="fstat" aria-live="polite" style="margin-top:.8rem">Sends straight to my inbox. No email app needed.</p>
+      </div></form>
+    </div>
+    <p class="cm rv">© <span id="yr"></span> Ngonzi Collin Joe · Made with curiosity in Kampala. · <a href="#home" data-go="0">↺ rewind to start</a></p>
+  </section>
+</main>
+
+<div id="prev" role="dialog" aria-label="Project preview"><div class="pwin win"><header><i></i><i></i><i></i><span id="ptitle"></span><span class="sp"></span><button id="pdesk" type="button" class="on">desktop</button><button id="pmob" type="button">phone</button><a id="pout" href="#" target="_blank" rel="noreferrer">open ↗</a><button id="pclose" type="button" aria-label="Close preview">✕</button></header><div class="pframe"><iframe id="pif" title="Live project preview" sandbox="allow-scripts allow-same-origin allow-forms allow-popups"></iframe></div><p class="cm">Preview blank? Some sites block embedding, so use “open ↗”.</p></div></div>
+<div id="pal" role="dialog" aria-label="Command palette"><div><input id="pin" placeholder="type a command…  (try: sudo hire collin)" autocomplete="off" aria-label="Command"><ul id="pl"></ul></div></div>
+<div id="toast" role="status"></div>
+</body>
+</html>
