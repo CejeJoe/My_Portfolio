@@ -71,15 +71,15 @@ p.lead{max-width:58ch;color:#ddd6c4;font-size:1.08rem}
 
 /* hero: amber hologram portrait */
 .shot{position:relative;aspect-ratio:4/5;width:min(100%,420px,calc(58vh*.8));justify-self:center;--mx:50%;--my:30%;cursor:crosshair;
- border:1px solid rgba(255,176,0,.5);background:radial-gradient(circle at 50% 40%,rgba(255,176,0,.2),transparent 70%);
- box-shadow:0 0 60px rgba(255,176,0,.25),inset 0 0 40px rgba(255,176,0,.18);animation:flick 5s infinite}
+ border:1px solid rgba(255,176,0,.38);background:radial-gradient(circle at 50% 40%,rgba(255,176,0,.12),transparent 70%);
+ box-shadow:0 0 60px rgba(255,176,0,.14),inset 0 0 40px rgba(255,176,0,.1);animation:flick 5s infinite}
 .shot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%}
-.shot .base{filter:grayscale(1) contrast(1.25) brightness(.85);animation:glitch 6s infinite}
-.shot .tint{position:absolute;inset:0;background:var(--amb);mix-blend-mode:multiply;z-index:1}
+.shot .base{filter:contrast(1.12) brightness(.82) saturate(.72);animation:glitch 6s infinite}
+.shot .tint{position:absolute;inset:0;background:rgba(255,176,0,.22);mix-blend-mode:multiply;z-index:1}
 .shot .col{z-index:2;opacity:.92;-webkit-mask-image:radial-gradient(circle 130px at var(--mx) var(--my),#000 60%,transparent);mask-image:radial-gradient(circle 130px at var(--mx) var(--my),#000 55%,transparent)}
-.shot .scan{position:absolute;inset:0;z-index:3;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,176,0,.25) 0 1px,transparent 1px 4px);mix-blend-mode:screen}
-.shot .beam{position:absolute;left:0;right:0;top:0;height:22%;z-index:4;pointer-events:none;background:linear-gradient(transparent,rgba(255,200,80,.5),transparent);animation:beam 3s ease-in-out infinite alternate}
-.shot .proj{position:absolute;left:6%;right:6%;bottom:-2.6rem;height:2.2rem;border-radius:50%;background:radial-gradient(ellipse,rgba(255,176,0,.75),transparent 70%);filter:blur(4px)}
+.shot .scan{position:absolute;inset:0;z-index:3;pointer-events:none;background:repeating-linear-gradient(0deg,rgba(255,176,0,.07) 0 1px,transparent 1px 4px);mix-blend-mode:screen}
+.shot .beam{position:absolute;left:0;right:0;top:0;height:22%;z-index:4;pointer-events:none;background:linear-gradient(transparent,rgba(255,200,80,.3),transparent);animation:beam 3s ease-in-out infinite alternate}
+.shot .proj{position:absolute;left:6%;right:6%;bottom:-2.6rem;height:2.2rem;border-radius:50%;background:radial-gradient(ellipse,rgba(255,176,0,.5),transparent 70%);filter:blur(4px)}
 .shot::before,.shot::after{content:"";position:absolute;width:24px;height:24px;z-index:5;border:2px solid var(--amb)}
 .shot::before{top:-7px;left:-7px;border-right:0;border-bottom:0}.shot::after{bottom:-7px;right:-7px;border-left:0;border-top:0}
 .shot figcaption{position:absolute;left:0;right:0;bottom:-4.6rem;font-size:.85rem;color:var(--dim);text-align:center}
